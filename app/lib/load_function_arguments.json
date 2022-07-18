@@ -1,0 +1,29 @@
+{
+    "project_details": {
+        "name": "",
+        "id": "",
+        "company": "VIKTOR",
+        "designer": "",
+        "client": "",
+        "notes": "",
+        "units": "metric"
+    },
+    "site_data": {
+        "design_code": "en1991",
+        "topography": {
+            "season_month": "January-February",
+            "terrain_category": "I",
+            "topo_image": false
+        }
+    },
+    "building_data": {
+        "design_code": "en1991",
+        "structure": "building",
+        "roof_profile": "monoslope",
+        "building_dimensions": {
+            "roof_angle": 0
+        },
+        "wind_parameters": {},
+        "snow_parameters": false
+    }
+}

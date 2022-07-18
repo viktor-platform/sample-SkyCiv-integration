@@ -1,0 +1,9 @@
+*.pyc
+venv
+__pycache__
+dev-requirements.txt
+pyproject.toml
+run_code_quality_tools.sh
+.vscode
+*.Identifier
+snippits
