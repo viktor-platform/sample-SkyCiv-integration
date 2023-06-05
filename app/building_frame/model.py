@@ -6,7 +6,7 @@ import skyciv
 from munch import Munch
 from typing_extensions import Literal
 
-from viktor.core import UserException
+from viktor.core import UserError
 from viktor.utils import render_jinja_template
 
 from .skyciv_functions import build_api_object
@@ -251,7 +251,7 @@ class BuildingFrame:
         else:
             # If status == 1, skyciv has given an error
             msg = response["msg"]
-            raise UserException(msg)
+            raise UserError(msg)
 
         return snow_load
 

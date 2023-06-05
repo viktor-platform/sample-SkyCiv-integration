@@ -3,7 +3,7 @@ import json
 from munch import Munch
 from skyciv.lib.request import request
 
-from viktor import UserException
+from viktor import UserError
 from viktor.core import ViktorController
 from viktor.core import progress_message
 from viktor.result import DownloadResult
@@ -32,7 +32,7 @@ def evaluate_skyciv(api_json: str) -> dict:
     # Send an api request
     response = request(api_json, {"https", 3})  # Send the json to the api
     if response["response"]["status"] != 0:  # The skyciv response status, 0 means no succesful
-        raise UserException(response["response"]["msg"])  # Send the skyciv error to the user
+        raise UserError(response["response"]["msg"])  # Send the skyciv error to the user
 
     # Evaluate the response
     functions = response["functions"]
