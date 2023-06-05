@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/SDK-V13.2.0-blue)
+![](https://img.shields.io/badge/SDK-V14.0.0-blue)
 
 # SkyCiv integration
 This sample app shows how to use the SkyCiv API with VIKTOR 
